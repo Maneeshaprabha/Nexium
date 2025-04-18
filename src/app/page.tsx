@@ -1,14 +1,8 @@
 import Image from "next/image"
-import { Phone, Menu } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { AboutSection } from "@/components/about-section"
-import { ServicesSection } from "@/components/services-section"
-import { TestimonialsSection } from "@/components/testimonials-section"
-import { StatsSection } from "@/components/stats-section"
-import { CTASection } from "@/components/cta-section"
-import { Footer } from "@/components/footer"
-import { AIChatbotWhiteSection } from "@/components/ai-chatbot-white-section"
 import Link from "next/link"
+
+import { Button } from '@/components/ui/button';
+
 
 export default function HomePage() {
   return (
@@ -23,16 +17,20 @@ export default function HomePage() {
           <header className="flex justify-between items-center py-6">
             <div className="flex items-center">
               <div className="mr-4">
-                <div className="flex">
+                {/* <div className="flex">
                   <div className="w-8 h-8 bg-purple-500 rounded-full"></div>
                   <div className="w-8 h-8 bg-pink-500 rounded-full -ml-4"></div>
                   <div className="w-8 h-8 bg-blue-500 rounded-full -ml-4"></div>
                   <div className="w-8 h-8 bg-green-500 rounded-full -ml-4"></div>
-                </div>
+                </div> */}
               </div>
-              <Link href="/" className="text-2xl font-bold">
-                Nexium
-              </Link>
+              <Image
+                        src="/placeholder.svg?height=30&width=120"
+                        alt="Trustpilot"
+                        width={120}
+                        height={30}
+                        className="h-8 w-auto"
+                      />
             </div>
 
             <nav className="hidden md:flex space-x-8">
@@ -56,17 +54,6 @@ export default function HomePage() {
               </Link>
             </nav>
 
-            <div className="flex items-center space-x-4">
-              <Link href="/contact">
-                <Button className="rounded-full bg-indigo-600 hover:bg-indigo-700">
-                  <Phone className="w-4 h-4 mr-2" />
-                  Contact Us
-                </Button>
-              </Link>
-              <button className="p-2 rounded-full border border-gray-200 bg-white md:hidden">
-                <Menu className="w-5 h-5" />
-              </button>
-            </div>
           </header>
 
           {/* Hero Section */}
@@ -83,12 +70,12 @@ export default function HomePage() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700">
+                  <Button  className="bg-indigo-600 hover:bg-indigo-700">
                     Get Started
                   </Button>
                   <Link href="/services">
                     <Button
-                      size="lg"
+               
                       variant="outline"
                       className="border-indigo-600 text-indigo-600 hover:bg-indigo-50"
                     >
@@ -103,7 +90,7 @@ export default function HomePage() {
                       <span className="text-yellow-400 mr-1">★</span>
                       <span className="font-bold text-2xl">4.8</span>
                     </div>
-                    <p className="text-sm text-gray-600">from 150,000+ Reviews</p>
+                    <p className="text-sm text-gray-600">from 15+ Reviews</p>
                   </div>
 
                   <div>
@@ -169,26 +156,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* About Section */}
-      <AboutSection />
-
-      {/* Services Section */}
-      <ServicesSection />
-
-      {/* AI Chatbot White Section */}
-      <AIChatbotWhiteSection />
-
-      {/* Stats Section */}
-      <StatsSection />
-
-      {/* Testimonials Section */}
-      <TestimonialsSection />
-
-      {/* CTA Section */}
-      <CTASection />
-
-      {/* Footer */}
-      <Footer />
+   
     </div>
   )
 }
