@@ -24,13 +24,17 @@ export default function HomePage() {
                   <div className="w-8 h-8 bg-green-500 rounded-full -ml-4"></div>
                 </div> */}
               </div>
+              <div className="w-full max-w-[500px]">
               <Image
-                        src="/placeholder.svg?height=30&width=120"
-                        alt="Trustpilot"
-                        width={120}
-                        height={30}
-                        className="h-8 w-auto"
-                      />
+  src="/assets/nexium.png"
+  alt="nexium"
+  width={120}
+  height={30}// Aspect ratio maintained
+  // sizes="18vw"
+  // className="h-auto w-auto"
+/>
+</div>
+
             </div>
 
             <nav className="hidden md:flex space-x-8">
@@ -65,7 +69,7 @@ export default function HomePage() {
                 </h1>
 
                 <p className="text-xl text-gray-700 mb-8 max-w-md">
-                  Specialized in SEO, Digital Marketing, E-Commerce, and Software Development to help your business
+                  Specialized in  E-Commerce, Software Development , SEO and Digital Marketing, to help your business
                   thrive.
                 </p>
 
