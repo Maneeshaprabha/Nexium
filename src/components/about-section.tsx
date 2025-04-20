@@ -21,19 +21,19 @@ export function AboutSection() {
 
   const expertise = [
     {
-      icon: <Briefcase className="h-8 w-8 text-indigo-600" />,
+      icon: <Briefcase className="h-8 w-8 text-[#e332a8]" />,
       title: "2+ Years Experience",
       description:
         "Our team brings over 2 years of specialized expertise in digital solutions across various industries.",
     },
     {
-      icon: <Users className="h-8 w-8 text-indigo-600" />,
+      icon: <Users className="h-8 w-8 text-[#e332a8]" />,
       title: "Expert Team",
       description:
         "Our certified professionals specialize in React, Next.js, Spring Boot, PHP, and other modern technologies.",
     },
     {
-      icon: <Zap className="h-8 w-8 text-indigo-600" />,
+      icon: <Zap className="h-8 w-8 text-[#e332a8]" />,
       title: "Rapid Delivery",
       description:
         "We pride ourselves on efficient project management and timely delivery of high-quality solutions.",
@@ -75,13 +75,7 @@ export function AboutSection() {
           animate="visible"
         >
           <div className="inline-block">
-            <div className="flex items-center justify-center space-x-2 mb-4">
-              <span className="h-px w-8 bg-indigo-600"></span>
-              <span className="text-indigo-600 uppercase text-sm font-bold tracking-wider">
-                About Us
-              </span>
-              <span className="h-px w-8 bg-indigo-600"></span>
-            </div>
+
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             We're a Team of Digital Experts
@@ -92,7 +86,7 @@ export function AboutSection() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-1">
           <motion.div
             variants={fadeIn}
             initial="hidden"
@@ -124,38 +118,44 @@ export function AboutSection() {
                   animate="visible"
                   custom={index + 2}
                 >
-                  <CheckCircle className="h-5 w-5 text-indigo-600 mr-2 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-[#e332a8] mr-2 mt-1 flex-shrink-0" />
                   <span className="text-gray-700">{benefit}</span>
                 </motion.div>
               ))}
             </div>
 
             <Link href="/contact">
-              <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700">
+             
+              <Button   size="lg" className="bg-[#5c50d2] hover:bg-[#5527d3]">
                 Get in Touch
               </Button>
             </Link>
           </motion.div>
 
           <motion.div
-            className="relative"
-            variants={fadeIn}
-            initial="hidden"
-            animate="visible"
-            custom={3}
-          >
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-indigo-600 rounded-lg opacity-20"></div>
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-pink-500 rounded-lg opacity-20"></div>
-            <div className="relative rounded-lg overflow-hidden shadow-xl">
-              <Image
-                src="/placeholder.svg?height=600&width=800"
-                alt="Nexium Team"
-                width={800}
-                height={600}
-                className="w-full h-auto"
-              />
-            </div>
-          </motion.div>
+  className="relative"
+  variants={fadeIn}
+  initial="hidden"
+  animate="visible"
+  custom={3}
+>
+  {/* Main image */}
+  <Image
+    src="/assets/ring2 .png"
+    alt="Nexium Team"
+    width={400}
+    height={300}
+    className="w-full h-auto relative z-10 rounded-xl "
+  />
+
+  {/* SVG Background Pattern */}
+  <div className="absolute inset-0 z-0 bg-cover opacity-100 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXR0ZXJuIGlkPSJncmlkIiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0gNTAgMCBMIDAgMCAwIDUwIiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMCwwLDAsMC4wNSkiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIiAvPjwvc3ZnPg==')] bg-cover bg-no-repeat rounded-xl absolute inset-0 z-0 opacity-30"></div>
+
+  {/* Colored overlays */}
+  <div className="absolute -top-4 -left-4 w-24 h-24 bg-indigo-600 rounded-lg opacity-20 z-0"></div>
+  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-pink-500 rounded-lg opacity-20 z-0"></div>
+</motion.div>
+
         </div>
 
         {/* Experience Highlights */}
@@ -171,7 +171,7 @@ export function AboutSection() {
               variants={fadeIn}
               custom={index + 4}
             >
-              <div className="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[#ffeef9] rounded-lg flex items-center justify-center mb-6">
                 {item.icon}
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">
@@ -185,7 +185,7 @@ export function AboutSection() {
         {/* Stats Section with CountUp */}
         <div
           ref={ref}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-8 text-white"
+          className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 bg-gradient-to-r from-[#ff02ab] to-purple-600 rounded-2xl p-8 text-white"
         >
           {stats.map((stat, index) => (
             <motion.div

@@ -14,7 +14,7 @@ export default function HomePage() {
 
         <div className="container mx-auto px-4 sm:px-6 relative z-10">
           {/* Header */}
-          <header className="flex justify-between items-center py-6">
+          <header className="flex justify-between items-center py-0.1">
             <div className="flex items-center">
               <div className="mr-4">
                 {/* <div className="flex">
@@ -77,7 +77,7 @@ export default function HomePage() {
           </header>
 
           {/* Hero Section */}
-          <div className="py-16 md:py-24">
+          <div className="py-10 md:py-4">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h1 className="text-5xl md:text-7xl font-bold text-gray-800 leading-tight mb-6">
@@ -90,13 +90,13 @@ export default function HomePage() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-[#e332a8] hover:bg-indigo-700">
+                  <Button className="bg-[#e332a8] hover:bg-[#d32786]">
                     Get Started
                   </Button>
                   <Link href="/services">
                     <Button
                       variant="outline"
-                      className="border-indigo-600 text-indigo-600 hover:bg-indigo-50"
+                      className="border-[#1d1a39] text-[#1c1a39] hover:bg-indigo-50"
                     >
                       Our Services
                     </Button>
@@ -141,7 +141,7 @@ export default function HomePage() {
                   </p>
 
                   <div className="text-8xl md:text-9xl font-bold text-gray-800">
-                    50<span className="text-indigo-600">+</span>
+                    50<span className="text-purple-600">+</span>
                   </div>
 
                   <div className="flex justify-end space-x-6 mt-8">
