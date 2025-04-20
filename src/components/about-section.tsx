@@ -128,7 +128,7 @@ export function AboutSection() {
             </div>
 
             <Link href="/contact">
-              <Button size="lg" className="bg-[#5c50d2] hover:bg-[#5527d3]">
+              <Button size="lg" className="bg-[#241e58] hover:bg-[#1d1a39]">
                 Get in Touch
               </Button>
             </Link>
