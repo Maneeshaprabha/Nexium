@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import { AboutSection } from "@/components/about-section";
+import { Footer } from "@/components/footer";
+import { ServicesSection } from "@/components/services-section";
 
 export default function HomePage() {
   return (
@@ -193,6 +195,8 @@ export default function HomePage() {
         </div>
       </div>
       <AboutSection />
+      <ServicesSection/>
+      <Footer/>
     </div>
   );
 }
