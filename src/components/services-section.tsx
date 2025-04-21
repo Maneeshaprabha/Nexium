@@ -84,7 +84,7 @@ export function ServicesSection() {
                     </Button>
                   </div>
                   <p className="text-gray-200 mt-4 mb-6">{service.description}</p>
-                  <Button className="bg-purple-700 hover:bg-purple-800 text-white">
+                  <Button className="bg-purple-700 hover:bg-purple-00 text-white">
                     Get This <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>

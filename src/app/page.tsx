@@ -6,6 +6,7 @@ import { AboutSection } from "@/components/about-section";
 import { Footer } from "@/components/footer";
 import { ServicesSection } from "@/components/services-section";
 import { AiChatbotWhiteSection } from "@/components/ai-chatbot-white-section";
+import { Technologies } from './../components/technologies';
 
 export default function HomePage() {
   return (
@@ -198,6 +199,7 @@ export default function HomePage() {
       <AboutSection />
       <ServicesSection/>
       <AiChatbotWhiteSection/>
+      <Technologies/>
       <Footer/>
     </div>
   );
