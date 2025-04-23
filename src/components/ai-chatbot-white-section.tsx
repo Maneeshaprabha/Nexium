@@ -36,7 +36,7 @@ export function AiChatbotWhiteSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          {/* <div className="md:col-span-1 ">
+          <div className="md:col-span-1 ">
             <div className="rounded-2xl relative overflow-hidden w-full h-full bg-gradient-to-br from-purple-400 to-indigo-600 flex items-center justify-center">
               <Image
                 src="/assets/goble.jpg"
@@ -46,7 +46,7 @@ export function AiChatbotWhiteSection() {
                 className="w-full h-full object-cover mix-blend-overlay opacity-80"
               />
             </div>
-          </div> */}
+          </div>
 
           <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
             {chatbotFeatures.map((feature, index) => (
