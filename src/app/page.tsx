@@ -7,6 +7,7 @@ import { Footer } from "@/components/footer";
 import { ServicesSection } from "@/components/services-section";
 import { AiChatbotWhiteSection } from "@/components/ai-chatbot-white-section";
 import { Technologies } from './../components/technologies';
+import TestimonialsSection from "@/components/testimonials-section";
 
 export default function HomePage() {
   return (
@@ -200,6 +201,7 @@ export default function HomePage() {
       <ServicesSection/>
       <AiChatbotWhiteSection/>
       <Technologies/>
+      <TestimonialsSection />
       <Footer/>
     </div>
   );
